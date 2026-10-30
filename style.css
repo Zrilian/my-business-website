@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.nav{
+    height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list-item a{
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.nav-list-item:last-child a{
+    border: none;
+}
+
+
+#home{
+    height: 40vh;
+}
+.hero {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/hero-background.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+  width: 40%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+#catalogue{
+    background-color: aquamarine;
+}
+#catalogue .container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: gray;
+}
+.product{
+    justify-self: center;
+    width: 200px;
+    height: 300px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: azure;
+}
+
+#contact{
+    background-color: darkcyan;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+#contact-form{
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+
+#contact-form button{
+    margin-top: 10px;
+}
+
+#footer{
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
