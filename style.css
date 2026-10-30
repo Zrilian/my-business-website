@@ -2,7 +2,7 @@
     --color-page-background: aliceblue;
     --color-header-background: aqua;
     --color-links: black;
-    --color-white: white;
+    --color-content-text: black;
     --color-hero-overlay: rgba(0, 0, 0, 0.3);
     --color-hero-text-background: rgba(0, 0, 0, 0.329);
     --color-catalogue-background: aquamarine;
@@ -19,6 +19,12 @@
 
 body{
     background-color: var(--color-page-background);
+}
+
+h1,
+.product-header,
+.product-body {
+    color: var(--color-content-text);
 }
 
 #header{
@@ -44,6 +50,12 @@ body{
     padding: 10px;
 }
 .nav-list-item:last-child a{
+    border: none;
+}
+.theme-btn{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
     border: none;
 }
 
@@ -75,7 +87,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(white);
+  color: white;
   text-shadow: 1px 1px 1px black;
   background-color: var(--color-hero-text-background);
   border-radius: 10px;
